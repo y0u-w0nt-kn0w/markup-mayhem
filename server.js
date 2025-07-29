@@ -30,10 +30,10 @@ app.use((req, res, next) => {
 
 // Challenge configuration
 const FLAG_PARTS = [
-  'mmuctf{d0m_xss_',        // Basic DOM XSS
-  'st0r3d_xss_',            // Stored XSS
-  'svg_xss_',               // SVG XSS
-  'csp_byp45s!!!}'             // CSP bypass
+  'mmuctf{d0m_x5s_',        // Basic DOM XSS
+  'st0r3d_x5s_',            // Stored XSS
+  's>g_x5s_',               // SVG XSS
+  'c5p_byp45s!*!}'          // CSP bypass
 ];
 
 const HINTS = [
