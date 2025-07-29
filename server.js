@@ -116,14 +116,12 @@ app.get('/', (req, res) => {
       </div>
       
       <script>
-        // Simple profile form handler
         document.getElementById('profileForm').addEventListener('submit', function(e) {
           e.preventDefault();
           const input = document.getElementById('profileInput').value;
           document.getElementById('profileOutput').textContent = input;
         });
         
-        // CSP bypass detection
         if (window.bypassSuccess) {
           fetch('/csp-bypass', { method: 'POST' });
         }
