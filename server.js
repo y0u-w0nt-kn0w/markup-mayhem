@@ -33,7 +33,7 @@ const FLAG_PARTS = [
   'mmuctf{d0m_xss_',        // Basic DOM XSS
   'st0r3d_xss_',            // Stored XSS
   'svg_xss_',               // SVG XSS
-  'csp_byp4ss}'             // CSP bypass
+  'csp_byp45s!!!}'             // CSP bypass
 ];
 
 const HINTS = [
