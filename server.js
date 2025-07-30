@@ -38,8 +38,8 @@ const FLAG_PARTS = [
 
 const HINTS = [
   "Some elements have attributes that can run code when certain events occur",
-  "The administrator has a routine inspection pattern - perhaps you can leave something interesting for them to find?",
-  "Vector graphics can be more than just pretty pictures - especially when they contain executable elements",
+  "The administrator has a routine inspection pattern!!!",
+  "Vector graphics can be more than just pretty pictures...",
   "Our content policy trusts a popular CDN - maybe their libraries know some interesting tricks?"
 ];
 
@@ -153,7 +153,7 @@ app.post('/comment', (req, res) => {
   sessions[sessionId].comments.push(comment);
   
   if (comment.includes('cookie') && !sessions[sessionId].solved.includes(1)) {
-    setTimeout(() => sessions[sessionId].solved.push(1), 10000);
+    setTimeout(() => sessions[sessionId].solved.push(1), 15000);
   }
   
   if (comment.includes('bypassSuccess') || comment.includes('ng-include')) {
@@ -161,7 +161,7 @@ app.post('/comment', (req, res) => {
       if (!sessions[sessionId].solved.includes(3)) {  // Changed index from 4 to 3
         sessions[sessionId].solved.push(3);
       }
-    }, 3000);
+    }, 15000);
   }
   
   res.redirect('/');
